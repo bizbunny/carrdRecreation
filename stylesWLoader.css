@@ -1,0 +1,44 @@
+/* Center the loader */
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 50px solid #ffbf83;
+    border-radius: 50%;
+    border-top: 50px solid #e88f3e;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  /*------------------------*/
+/* Add animation to "page content" */
+.animate-flip1 {
+    position: relative;
+    -webkit-animation-name: animateflip;
+    -webkit-animation-duration: 1s;
+    animation-name: animateflip;
+    animation-duration: 1s
+  }
+  @-webkit-keyframes animateflip {
+    from { -webkit-transform: rotateX(90deg); transform: rotateX(90deg); opacity:0} 
+    to { -webkit-transform: rotateX(0deg); transform: rotateX(0deg); opacity:1}
+  }
+  
+  @keyframes animateflip { 
+    from{ -webkit-transform: rotateX(90deg); transform: rotateX(90deg); opacity:0} 
+    to{ -webkit-transform: rotateX(0deg); transform: rotateX(0deg); opacity:1}
+  }
+  /*------------------------*/

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="./stylesheets/styles.css" rel="stylesheet">
+    <link href="./stylesheets/stylesWModal.css" rel="stylesheet">
+    <link href="./stylesheets/stylesWLoader.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body onload="loadingLoader()" style="margin:0;">
+    <div id="loader"></div>
+    <div style="display:none;" id="mainContent" class="animate-flip1">
+        <div class="flex-container">
+        <div class="card">
+            <img src="https://pbs.twimg.com/profile_images/1343646540167061516/sGC-b4g-_400x400.jpg" id="profile" alt="logo">
+            <div class="container">
+                <h4 id="artist"><b>Vi-Anh Nguyen</b></h4>
+                <p>Illustrator and Coder</p>
+                <div id="social-icons">
+                    <a href="#" class="fa fa-instagram" style="font-size:48px"></a>
+                    <a href="#" class="fa fa-twitter" style="font-size:48px"></a>
+                </div>
+                <hr class="divider">
+                <div id="social-icons2">
+                    <a href="#" class="fa fa-github" style="font-size:48px"></a>
+                    <a href="#" class="fa fa-linkedin" style="font-size:48px"></a>
+                </div>
+                <div class="art">
+                    <img src="https://pbs.twimg.com/media/EwkmU5pXEAAT1QQ?format=jpg&name=900x900" class="square" id="myImg">
+                <img src="https://pbs.twimg.com/media/E4BAgjaVkAEg8fY?format=jpg&name=4096x4096" class="square" id="myImg">
+                <img src="https://pbs.twimg.com/media/E8RzKTCXsAImxYS?format=png&name=4096x4096" class="square" id="myImg">
+                </div>
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                    <!-- The Close Button -->
+                    <span class="close">&times;</span>
+
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" id="img01">
+
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                </div>
+                <hr class="divider">
+                <p id="caption">(Made with Visual Studio Code)</p>
+            </div>     
+        </div>
+    </div>
+    </div>
+    <script src="js files/loader.js"></script>
+    <script src="js files/Modal.js"></script>
+  </body>
+  </html>
